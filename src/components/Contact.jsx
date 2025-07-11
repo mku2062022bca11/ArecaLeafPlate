@@ -130,14 +130,20 @@ export const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <InfoItem icon={Phone} title="Phone" value="+91 96775 40740" />
-                <InfoItem icon={Mail} title="Email" value="manikandan540740@gmail.com" />
+                <InfoItem
+                  icon={Mail}
+                  title="Email"
+                  value="manikandan540740@gmail.com"
+                />
                 <InfoItem
                   icon={MapPin}
                   title="Address"
                   value={
                     <>
-                      Bharat Petroleum Station<br />
-                      SH-17A, Dindigul–Palani Road, Ayakudi,<br />
+                      Bharat Petroleum Station
+                      <br />
+                      SH-17A, Dindigul–Palani Road, Ayakudi,
+                      <br />
                       Palani, Tamil Nadu 624613, India
                     </>
                   }
@@ -155,7 +161,7 @@ export const Contact = () => {
                 <div className="w-full h-64 rounded-lg overflow-hidden border border-gray-700">
                   <iframe
                     title="Ayakudi Palani Map"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=77.515%2C10.455%2C77.519%2C10.459&layer=mapnik&marker=10.457%2C77.517"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=77.55076289176941%2C10.447520354467974%2C77.55893826484682%2C10.45109711173025&amp;layer=mapnik&amp;marker=10.44930873824647%2C77.5548505783081"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -169,7 +175,9 @@ export const Contact = () => {
           {/* Contact Form */}
           <Card className="border border-gray-700 shadow-2xl bg-gray-900/50 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-xl text-white">Send us a Message</CardTitle>
+              <CardTitle className="text-xl text-white">
+                Send us a Message
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -232,9 +240,19 @@ const InfoItem = ({ icon: Icon, title, value }) => (
 );
 
 // Reusable Input Field
-const InputField = ({ id, label, type = "text", value, onChange, required }) => (
+const InputField = ({
+  id,
+  label,
+  type = "text",
+  value,
+  onChange,
+  required,
+}) => (
   <div>
-    <label htmlFor={id} className="block text-sm font-medium text-gray-200 mb-1">
+    <label
+      htmlFor={id}
+      className="block text-sm font-medium text-gray-200 mb-1"
+    >
       {label}
     </label>
     <input
@@ -253,7 +271,10 @@ const InputField = ({ id, label, type = "text", value, onChange, required }) => 
 // Reusable Textarea Field
 const TextAreaField = ({ id, label, value, onChange, required }) => (
   <div>
-    <label htmlFor={id} className="block text-sm font-medium text-gray-200 mb-1">
+    <label
+      htmlFor={id}
+      className="block text-sm font-medium text-gray-200 mb-1"
+    >
       {label}
     </label>
     <textarea
